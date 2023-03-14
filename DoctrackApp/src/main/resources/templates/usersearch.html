@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html  lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>User Page</title>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+
+</head>
+<style>
+ *{
+   padding:50px;
+ 
+ }
+ 
+
+</style>
+
+<body>	
+       <div align="center" class="container">
+       
+
+         <form   method="get" >
+          <input type="text" name="*{doc_pin}*" class="form-control mb-4 col-4" placeholder="You Area Pin Code">
+           
+          <button class="btn btn-success btn-block mt-2 col-3"> <a th:href="@{/home}">Search</a></button>
+       </form>
+
+       <button class="btn btn-success btn-block mt-2 col-3"><a th:href="@{/userlogin}">LogOut</a></button>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Admin</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Admin Update Doctor</h1>
+        <hr>
+        <h2>Update Doctor</h2>
+        <form action="#" th:action="@{/saveDoctor}"  method="POST">
+    
+           <input type="text" name="doc_id"  class="form-control mb-3 col-4" placeholder=" Doc -ID">
+           <input type="text" name="doc_name" class="form-control mb-4 col-4" placeholder="Name">
+           <input type="text" name="doc_phone_no" class="form-control mb-4 col-4" placeholder="Phone No">
+           <input type="text" name="doc_specialization" class="form-control mb-4 col-4" placeholder="Specialization">
+           <input type="text" name="doc_availabletime" class="form-control mb-4 col-4" placeholder="Time">
+           <input type="text" name="doc_email" class="form-control mb-4 col-4" placeholder="Email Id">
+           <input type="text" name="doc_pin" class="form-control mb-4 col-4" placeholder="Pincode">
+  
+     <button type="submit" class="btn btn-info col-2"> Update Doctor</button>
+</form>
+        <!-- <form action="#" th:action="@{/saveDoctor}" th:object="${doctor}" method="POST">
+
+          
+            <input type="hidden" th:field="*{doc_id}" />
+
+            <input type="text" th:field="*{doc_name}" class="form-control mb-4 col-4">
+
+            <input type="text" th:field="*{doc_phone_no}" class="form-control mb-4 col-4">
+            <input type="text" th:field="*{doc_availabletime}" class="form-control mb-4 col-4">
+            <input type="text" th:field="*{email}" class="form-control mb-4 col-4">
+
+            <button type="submit" class="btn btn-info col-2"> Update Doctor</button>
+        </form>  -->
+  	 	
+        <hr>
+
+        <a th:href="@{/home}"> Back to Doctor List</a>
+    </div>
+</body>
+
+</html>

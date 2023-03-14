@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html  lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Admin Login Page</title>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <style>
+   .login-form{
+      width:400px;
+      height:200px;
+      justify-content:center;
+      position:absolute;
+      background-color:#AAE3E2;
+      border-radius:10px;
+      top:50%;
+      left:50%;
+      
+      margin-right: -50%;
+      transform:translate(-50%,-50%);
+      
+    }
+    *{
+     display:flex-box;
+     justify-content:center;
+     padding:10px;
+     
+     }
+     .inner-box{
+     background-color:#ECF9FF;
+     
+      border-radius:10px;
+      top:50%;
+      left:50%;
+     }
+   
+   
+   </style>
+
+</head>
+
+<body>	
+          
+          
+        <section class="inner-box">
+        <div align="center">  <h2><strong>Welcome to  DocTrack</strong></h2></div>
+        <div  align="center" class="Login-form">
+        
+        <div >
+    <div class="container-fluid">
+       <form  method="post">
+          <label><em><strong>ADMIN LOGIN</strong></em></label>
+          <input type="text" name="admin_id" class="form-control mb-4 col-4" placeholder="Admin Id">
+           <input type="password" name="admin_password"  class="form-control mb-3 col-4" placeholder="Password">
+          <button class="btn btn-success btn-block mt-2 col-3">Login</button>
+       </form>
+    </div>
+    
+    </div>
+    
+    </div>
+    </section>
+   
+</body>
+
+</html>
